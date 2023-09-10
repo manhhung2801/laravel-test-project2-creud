@@ -13,7 +13,9 @@ class PostController extends Controller
      */
     public function index()
     {
-        return view('index');
+        $posts = Post::all();
+
+        return view('index', compact('posts'));
     }
 
     /**
@@ -45,7 +47,7 @@ class PostController extends Controller
         $post->title = $request->title;
         $post->description = $request->description;
         $post->category_id = $request->category_id;
-        $post->image = $filePath;
+        $post->image = 'storage/'.$filePath; // storage/uploads/filename
         $post->save();
 
         return redirect()->route('posts.index');
