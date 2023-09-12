@@ -41,7 +41,7 @@
                                 <td>
         
                                     <a class="btn btn-sm btn-success" href="">Show</a>
-                                    <a class="btn btn-sm btn-primary" href="">Edit</a>
+                                    <a class="btn btn-sm btn-primary" href="{{route('posts.edit', $post->id)}}">Edit</a>
                                     <a class="btn btn-sm btn-danger" href="">Delete</a>
                                 </td>
                             </tr>
