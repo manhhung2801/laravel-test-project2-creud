@@ -7,3 +7,5 @@
 ## run: php artisan key:generate
 ## run : php artisan storage:link 
 ## run - php artisan migrate - : check 
+
+## php artisan make:migration add_posts_table --table=post

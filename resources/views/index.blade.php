@@ -10,7 +10,7 @@
                 </div>
                 <div class="col-md-6 d-flex justify-content-end">
                     <a class="btn btn-success mx-1" href="{{route('posts.create')}}">Create</a>
-                    <a class="btn btn-warning mx-1" href="">Trashed</a>
+                    <a class="btn btn-warning mx-1" href="{{route("posts.trashed")}}">Trashed</a>
                 </div>
             </div>
         </div>
