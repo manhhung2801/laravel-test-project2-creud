@@ -12,6 +12,10 @@ class PostController extends Controller
     /**
      * Display a listing of the resource.
      */
+    public function __construct(){
+        // $this->middleware('authCheck2')->only(['create', 'show']);
+        $this->middleware('authCheck2')->except('index');
+    }
     public function index()
     {
         $posts = Post::paginate(5);
