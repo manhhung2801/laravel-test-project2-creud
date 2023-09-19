@@ -10,4 +10,4 @@
 
 ## php artisan make:migration add_posts_table --table=post
 
-## finished 
+## finished success
